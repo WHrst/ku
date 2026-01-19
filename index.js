@@ -3,7 +3,7 @@
 
 import { getRequestHeaders } from "../../../../script.js";
 
-const extensionName = 'lu-collection';
+const extensionName = 'ku';
 
 // 设置项
 let pluginSettings = {
