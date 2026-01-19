@@ -3,7 +3,7 @@
 
 import { getRequestHeaders } from "../../../../script.js";
 
-const extensionName = 'luxing-collection';
+const extensionName = 'lu-collection';
 
 // 设置项
 let pluginSettings = {
