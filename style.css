@@ -1,0 +1,112 @@
+/* 自定义主题包插件样式 */
+
+#custom_themes_container {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#custom_themes_container .extension_header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#custom_themes_container .extension_header h3 {
+    margin: 0;
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#custom_themes_container .extension_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#custom_themes_container .extension_settings {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#custom_themes_container .extension_settings button {
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+#custom_themes_container .extension_settings button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--main-text-color);
+}
+
+#custom_themes_container .extension_settings button:active {
+    transform: translateY(1px);
+}
+
+#custom_themes_container .extension_settings button i {
+    font-size: 16px;
+}
+
+#custom_themes_container .extension_info {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border-left: 3px solid var(--main-text-color);
+}
+
+#custom_themes_container .extension_info p {
+    margin: 5px 0;
+    color: var(--main-text-color);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#custom_themes_container .extension_info p:first-child {
+    margin-top: 0;
+}
+
+#custom_themes_container .extension_info p:last-child {
+    margin-bottom: 0;
+}
+
+.theme-item {
+    width: calc(33.33% - 10px);
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding:0 14px;
+    display:flex;gap:10px
+}
+.theme_list td {
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 16px 8px;
+    text-align: left;
+}
+.theme_list .theme-row:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.theme_list h4{flex:0 0 100%}
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #custom_themes_container .extension_settings {
+        flex-direction: column;
+    }
+
+    #custom_themes_container .extension_settings button {
+        width: 100%;
+        justify-content: center;
+    }
+}

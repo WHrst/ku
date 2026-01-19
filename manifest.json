@@ -1,0 +1,11 @@
+{
+    "display_name": "鹿行-合集",
+    "loading_order": 1,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "chendian",
+    "version": "1.0.0",
+    "homePage": "https://gitee.com/chendian123455/luxing-collection.git"
+}
